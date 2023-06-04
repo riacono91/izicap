@@ -4,3 +4,4 @@ I identified some test cases with priority 1, and these will be once that I will
 For the cases I assume that:
 - There is no specific password format
 - At signup there is no email sent
+- in the test I dont specify the leyout check, but I think should exist specific tests to check the layout per each page
