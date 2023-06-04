@@ -701,6 +701,7 @@
   </body>
 </html></richcontent>
 </node>
+<node CREATED="1685885837525" ID="ID_126699616" MODIFIED="1685885856077" TEXT="test if an user could be logged in more browser at the same time"/>
 </node>
 <node CREATED="1685515281532" HGAP="140" ID="ID_1549926316" MODIFIED="1685801154796" POSITION="right" TEXT="Creation of a new article">
 <node CREATED="1685796673557" ID="ID_925564709" MODIFIED="1685805603941" TEXT="create a new article and publish">
