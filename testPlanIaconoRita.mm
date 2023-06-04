@@ -28,25 +28,18 @@
     </ul>
   </body>
 </html></richcontent>
-<node CREATED="1685515267131" ID="ID_930267033" MODIFIED="1685781305625" POSITION="right" TEXT="Creation of a new account">
+<node CREATED="1685515267131" ID="ID_930267033" MODIFIED="1685870730585" POSITION="right" TEXT="Creation of a new account">
+<node CREATED="1685532296848" ID="ID_1098386189" MODIFIED="1685866478931" TEXT="new user creation">
 <richcontent TYPE="NOTE"><html>
   <head>
     
   </head>
   <body>
     <p>
-      for this test suite the user is supposed to be on the Sign Up page (https://angular.realworld.io/register)
+      the user is on the home page https://angular.realworld.io
     </p>
-  </body>
-</html></richcontent>
-<node CREATED="1685532296848" ID="ID_1098386189" MODIFIED="1685800841620" TEXT="new user creation">
-<richcontent TYPE="NOTE"><html>
-  <head>
-    
-  </head>
-  <body>
     <p>
-      
+      the user click on Sign Up
     </p>
     <p>
       check: the page is https://angular.realworld.io/register
@@ -85,15 +78,19 @@
       check : user is redirect to the 'your feed' section
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <icon BUILTIN="full-1"/>
 </node>
-<node CREATED="1685532296848" ID="ID_1098645063" MODIFIED="1685780557720" TEXT="new user creation - need an account">
+<node CREATED="1685532296848" ID="ID_1098645063" MODIFIED="1685870753097" TEXT="new user creation - need an account">
 <richcontent TYPE="NOTE"><html>
   <head>
     
   </head>
   <body>
+    <p>
+      the user is on the home page https://angular.realworld.io
+    </p>
     <p>
       User click on Sign in (https://angular.realworld.io/login)
     </p>
@@ -113,15 +110,28 @@
       check : user is redirect to the 'your feed' section
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <icon BUILTIN="full-1"/>
 </node>
-<node CREATED="1685532296848" ID="ID_158772373" MODIFIED="1685796223742" TEXT="new user creation - partial credential">
+<node CREATED="1685532296848" ID="ID_158772373" MODIFIED="1685874113345" TEXT="new user creation - partial credential">
 <richcontent TYPE="NOTE"><html>
   <head>
     
   </head>
   <body>
+    <p>
+      the user is on the home page https://angular.realworld.io
+    </p>
+    <p>
+      the user click on Sign Up
+    </p>
+    <p>
+      check: the page is https://angular.realworld.io/register
+    </p>
+    <p>
+      
+    </p>
     <p>
       user enters credentials - username, email
     </p>
@@ -132,15 +142,28 @@
       check : 'sign up' button is not clickable
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <icon BUILTIN="full-1"/>
 </node>
-<node CREATED="1685532296848" ID="ID_1972035047" MODIFIED="1685796210023" TEXT="new user creation - only username">
+<node CREATED="1685532296848" ID="ID_1972035047" MODIFIED="1685884464393" TEXT="new user creation - only username">
 <richcontent TYPE="NOTE"><html>
   <head>
     
   </head>
   <body>
+    <p>
+      the user is on the home page https://angular.realworld.io
+    </p>
+    <p>
+      the user click on Sign Up
+    </p>
+    <p>
+      check: the page is https://angular.realworld.io/register
+    </p>
+    <p>
+      
+    </p>
     <p>
       user enters credentials - username
     </p>
@@ -151,14 +174,27 @@
       check : 'sign up' button is not clickable
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 </node>
-<node CREATED="1685532669568" ID="ID_1447469189" MODIFIED="1685796150959" TEXT="new user - without email">
+<node CREATED="1685532669568" ID="ID_1447469189" MODIFIED="1685884478774" TEXT="new user - without email">
 <richcontent TYPE="NOTE"><html>
   <head>
     
   </head>
   <body>
+    <p>
+      the user is on the home page https://angular.realworld.io
+    </p>
+    <p>
+      the user click on Sign Up
+    </p>
+    <p>
+      check: the page is https://angular.realworld.io/register
+    </p>
+    <p>
+      
+    </p>
     <p>
       user enters credentials without email
     </p>
@@ -169,14 +205,27 @@
       check :&#160;&#160;'sign up' button is not clickable
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 </node>
-<node CREATED="1685532296848" ID="ID_1458268738" MODIFIED="1685796205795" TEXT="new user creation - only email">
+<node CREATED="1685532296848" ID="ID_1458268738" MODIFIED="1685884537637" TEXT="new user creation - only email">
 <richcontent TYPE="NOTE"><html>
   <head>
     
   </head>
   <body>
+    <p>
+      the user is on the home page https://angular.realworld.io
+    </p>
+    <p>
+      the user click on Sign Up
+    </p>
+    <p>
+      check: the page is https://angular.realworld.io/register
+    </p>
+    <p>
+      
+    </p>
     <p>
       user enters credentials - email
     </p>
@@ -187,14 +236,27 @@
       check :&#160;&#160;'sign up' button is not clickable
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 </node>
-<node CREATED="1685532649278" ID="ID_1481497941" MODIFIED="1685805696726" TEXT="new user - wrong email">
+<node CREATED="1685532649278" ID="ID_1481497941" MODIFIED="1685884546097" TEXT="new user - wrong email">
 <richcontent TYPE="NOTE"><html>
   <head>
     
   </head>
   <body>
+    <p>
+      the user is on the home page https://angular.realworld.io
+    </p>
+    <p>
+      the user click on Sign Up
+    </p>
+    <p>
+      check: the page is https://angular.realworld.io/register
+    </p>
+    <p>
+      
+    </p>
     <p>
       user enters credentials with an email withou @
     </p>
@@ -205,14 +267,27 @@
       check : user receives an error message
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 </node>
-<node CREATED="1685533303498" ID="ID_1149528640" MODIFIED="1685796119701" TEXT="new user - username already exist">
+<node CREATED="1685533303498" ID="ID_1149528640" MODIFIED="1685884554096" TEXT="new user - username already exist">
 <richcontent TYPE="NOTE"><html>
   <head>
     
   </head>
   <body>
+    <p>
+      the user is on the home page https://angular.realworld.io
+    </p>
+    <p>
+      the user click on Sign Up
+    </p>
+    <p>
+      check: the page is https://angular.realworld.io/register
+    </p>
+    <p>
+      
+    </p>
     <p>
       user enters credentials with a username that already exist
     </p>
@@ -223,15 +298,28 @@
       check : error message -&gt; username has already been taken
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <icon BUILTIN="full-1"/>
 </node>
-<node CREATED="1685533303498" ID="ID_108853013" MODIFIED="1685796124065" TEXT="new user - email already exist">
+<node CREATED="1685533303498" ID="ID_108853013" MODIFIED="1685884572913" TEXT="new user - email already exist">
 <richcontent TYPE="NOTE"><html>
   <head>
     
   </head>
   <body>
+    <p>
+      the user is on the home page https://angular.realworld.io
+    </p>
+    <p>
+      the user click on Sign Up
+    </p>
+    <p>
+      check: the page is https://angular.realworld.io/register
+    </p>
+    <p>
+      
+    </p>
     <p>
       user enters credentials with an email that already exist
     </p>
@@ -242,14 +330,27 @@
       check : error message -&gt;&#160;&#160;email has already been taken
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 </node>
-<node CREATED="1685532669568" ID="ID_1600551609" MODIFIED="1685796129443" TEXT="new user - without username">
+<node CREATED="1685532669568" ID="ID_1600551609" MODIFIED="1685884590030" TEXT="new user - without username">
 <richcontent TYPE="NOTE"><html>
   <head>
     
   </head>
   <body>
+    <p>
+      the user is on the home page https://angular.realworld.io
+    </p>
+    <p>
+      the user click on Sign Up
+    </p>
+    <p>
+      check: the page is https://angular.realworld.io/register
+    </p>
+    <p>
+      
+    </p>
     <p>
       user enters credentials without username
     </p>
@@ -260,20 +361,43 @@
       check : error message -&gt;&#160;&#160;username can't be blank
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <icon BUILTIN="full-1"/>
 </node>
-<node CREATED="1685803511342" ID="ID_1011272522" MODIFIED="1685803809477" TEXT="creation new account with a very long username">
+<node CREATED="1685803511342" ID="ID_1011272522" MODIFIED="1685884636239" TEXT="creation new account with a very long username">
 <richcontent TYPE="NOTE"><html>
   <head>
     
   </head>
   <body>
     <p>
+      the user is on the home page https://angular.realworld.io
+    </p>
+    <p>
+      the user click on Sign Up
+    </p>
+    <p>
+      check: the page is https://angular.realworld.io/register
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      user enters credentials - username very long, email, password
+    </p>
+    <p>
+      user clicks Sign up
+    </p>
+    <p>
+      
+    </p>
+    <p>
       expected result: the text is formatted following the page layout
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 </node>
 </node>
 <node CREATED="1685515276492" ID="ID_534959118" MODIFIED="1685785954960" POSITION="right" TEXT="login">
@@ -577,6 +701,7 @@
   </body>
 </html></richcontent>
 </node>
+<node CREATED="1685885837525" ID="ID_126699616" MODIFIED="1685885856077" TEXT="test if an user could be logged in more browser at the same time"/>
 </node>
 <node CREATED="1685515281532" HGAP="140" ID="ID_1549926316" MODIFIED="1685801154796" POSITION="right" TEXT="Creation of a new article">
 <node CREATED="1685796673557" ID="ID_925564709" MODIFIED="1685805603941" TEXT="create a new article and publish">
