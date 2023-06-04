@@ -401,14 +401,17 @@
 </node>
 </node>
 <node CREATED="1685515276492" ID="ID_534959118" MODIFIED="1685785954960" POSITION="right" TEXT="login">
-<node CREATED="1685779250494" ID="ID_409578717" MODIFIED="1685800892527" TEXT="login correct ">
+<node CREATED="1685779250494" ID="ID_409578717" MODIFIED="1685889754069" TEXT="login correct ">
 <richcontent TYPE="NOTE"><html>
   <head>
     
   </head>
   <body>
     <p>
-      for this test the user is supposed to be on the Sign In page (https://angular.realworld.io/login)
+      the user is on the home page https://angular.realworld.io
+    </p>
+    <p>
+      the user click on Sign In
     </p>
     <p>
       
@@ -459,17 +462,27 @@
       check: the navigation bar with profile section that contain an avatar and the username
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <icon BUILTIN="full-1"/>
 </node>
-<node CREATED="1685779250494" ID="ID_1167959673" MODIFIED="1685796409922" TEXT="login correct and global feed">
+<node CREATED="1685779250494" ID="ID_1167959673" MODIFIED="1685889843622" TEXT="login correct and global feed">
 <richcontent TYPE="NOTE"><html>
   <head>
     
   </head>
   <body>
     <p>
-      for this test the user is supposed to be on the Sign In page (https://angular.realworld.io/login)
+      the user is on the home page https://angular.realworld.io
+    </p>
+    <p>
+      the user click on Sign In
+    </p>
+    <p>
+      check: the page is https://angular.realworld.io/login
+    </p>
+    <p>
+      
     </p>
     <p>
       user enters credentials - email, password
@@ -484,17 +497,27 @@
       check: the view of the article list
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <icon BUILTIN="full-1"/>
 </node>
-<node CREATED="1685783671576" ID="ID_1687006799" MODIFIED="1685796418828" TEXT="sign in - logout - sign in">
+<node CREATED="1685783671576" ID="ID_1687006799" MODIFIED="1685889863603" TEXT="sign in - logout - sign in">
 <richcontent TYPE="NOTE"><html>
   <head>
     
   </head>
   <body>
     <p>
-      for this test the user is supposed to be on the Sign In page (https://angular.realworld.io/login)
+      the user is on the home page https://angular.realworld.io
+    </p>
+    <p>
+      the user click on Sign In
+    </p>
+    <p>
+      check: the page is https://angular.realworld.io/login
+    </p>
+    <p>
+      
     </p>
     <p>
       user enters credentials - email, password
@@ -529,21 +552,28 @@
     <p>
       
     </p>
-    <p>
-      
-    </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <icon BUILTIN="full-1"/>
 </node>
-<node CREATED="1685785425102" ID="ID_251262217" MODIFIED="1685796423686" TEXT="wrong login - email">
+<node CREATED="1685785425102" ID="ID_251262217" MODIFIED="1685889872812" TEXT="wrong login - email">
 <richcontent TYPE="NOTE"><html>
   <head>
     
   </head>
   <body>
     <p>
-      for this test the user is supposed to be on the Sign In page (https://angular.realworld.io/login)
+      the user is on the home page https://angular.realworld.io
+    </p>
+    <p>
+      the user click on Sign In
+    </p>
+    <p>
+      check: the page is https://angular.realworld.io/login
+    </p>
+    <p>
+      
     </p>
     <p>
       user enters credentials - wrong email, password
@@ -555,16 +585,26 @@
       check: message 'email or password is invalid'
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 </node>
-<node CREATED="1685785425102" ID="ID_1298597329" MODIFIED="1685796428214" TEXT="wrong login - password">
+<node CREATED="1685785425102" ID="ID_1298597329" MODIFIED="1685889877153" TEXT="wrong login - password">
 <richcontent TYPE="NOTE"><html>
   <head>
     
   </head>
   <body>
     <p>
-      for this test the user is supposed to be on the Sign In page (https://angular.realworld.io/login)
+      the user is on the home page https://angular.realworld.io
+    </p>
+    <p>
+      the user click on Sign In
+    </p>
+    <p>
+      check: the page is https://angular.realworld.io/login
+    </p>
+    <p>
+      
     </p>
     <p>
       user enters credentials - email, wrong password
@@ -576,16 +616,17 @@
       check: message 'email or password is invalid'
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 </node>
-<node CREATED="1685786223498" ID="ID_973910078" MODIFIED="1685796435717" TEXT="login from home section / heart button">
+<node CREATED="1685786223498" ID="ID_973910078" MODIFIED="1685889910662" TEXT="login from home section / heart button">
 <richcontent TYPE="NOTE"><html>
   <head>
     
   </head>
   <body>
     <p>
-      for this test suite the user is supposed to be on the Home page (https://angular.realworld.io)
+      for this test&#160;&#160;the user is supposed to be on the Home page (https://angular.realworld.io)
     </p>
     <p>
       click on the button with the heart
@@ -614,20 +655,18 @@
     <p>
       check: the navigation bar with profile section that contain an avatar and the username
     </p>
-    <p>
-      
-    </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 </node>
-<node CREATED="1685786223498" ID="ID_888658470" MODIFIED="1685795821226" TEXT="login from home section / article link">
+<node CREATED="1685786223498" ID="ID_888658470" MODIFIED="1685889918657" TEXT="login from home section / article link">
 <richcontent TYPE="NOTE"><html>
   <head>
     
   </head>
   <body>
     <p>
-      for this test suite the user is supposed to be on the Home page (https://angular.realworld.io)
+      for this test the user is supposed to be on the Home page (https://angular.realworld.io)
     </p>
     <p>
       click on the article link
@@ -663,16 +702,26 @@
       check: the navigation bar with profile section that contain an avatar and the username
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 </node>
-<node CREATED="1685785425102" ID="ID_975502567" MODIFIED="1685796391388" TEXT="login with only password">
+<node CREATED="1685785425102" ID="ID_975502567" MODIFIED="1685889926662" TEXT="login with only password">
 <richcontent TYPE="NOTE"><html>
   <head>
     
   </head>
   <body>
     <p>
-      for this test the user is supposed to be on the Sign In page (https://angular.realworld.io/login)
+      the user is on the home page https://angular.realworld.io
+    </p>
+    <p>
+      the user click on Sign In
+    </p>
+    <p>
+      check: the page is https://angular.realworld.io/login
+    </p>
+    <p>
+      
     </p>
     <p>
       user enters credentials - password
@@ -681,16 +730,26 @@
       check :&#160;&#160;'sign up' button is not clickable
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 </node>
-<node CREATED="1685785425102" ID="ID_780476096" MODIFIED="1685796461972" TEXT="login with only email">
+<node CREATED="1685785425102" ID="ID_780476096" MODIFIED="1685889932235" TEXT="login with only email">
 <richcontent TYPE="NOTE"><html>
   <head>
     
   </head>
   <body>
     <p>
-      for this test the user is supposed to be on the Sign In page (https://angular.realworld.io/login)
+      the user is on the home page https://angular.realworld.io
+    </p>
+    <p>
+      the user click on Sign In
+    </p>
+    <p>
+      check: the page is https://angular.realworld.io/login
+    </p>
+    <p>
+      
     </p>
     <p>
       user enters credentials - email
@@ -699,7 +758,8 @@
       check :&#160;&#160;'sign up' button is not clickable
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 </node>
 <node CREATED="1685885837525" ID="ID_126699616" MODIFIED="1685885856077" TEXT="test if an user could be logged in more browser at the same time"/>
 </node>
@@ -957,6 +1017,19 @@
     </p>
   </body>
 </html></richcontent>
+</node>
+<node CREATED="1685803320536" ID="ID_482128498" MODIFIED="1685893090377" TEXT="creation a new article with already existing title">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      expected result: warning message: title must be unique
+    </p>
+  </body>
+</html>
+</richcontent>
 </node>
 </node>
 <node CREATED="1685515291158" HGAP="21" ID="ID_495357985" MODIFIED="1685801158692" POSITION="right" TEXT="Edit of an existing article" VSHIFT="26">
