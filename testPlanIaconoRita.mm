@@ -1349,7 +1349,7 @@
 <node CREATED="1685984117293" ID="ID_48172855" MODIFIED="1685984131968" TEXT="adding an article as not registered user"/>
 </node>
 <node CREATED="1685515315720" HGAP="2" ID="ID_1424695680" MODIFIED="1685805032318" POSITION="right" TEXT="Deletion of an existing article" VSHIFT="18">
-<node CREATED="1685797557140" ID="ID_1058511518" MODIFIED="1685805660556" TEXT="delete article created by others">
+<node CREATED="1685797557140" ID="ID_1058511518" MODIFIED="1685986595739" TEXT="delete article created by others">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -1372,7 +1372,6 @@
     </p>
   </body>
 </html></richcontent>
-<icon BUILTIN="full-1"/>
 </node>
 <node CREATED="1685797557140" ID="ID_1406542507" MODIFIED="1685805666905" TEXT="delete article created by the user with the first button">
 <richcontent TYPE="NOTE"><html>
@@ -1435,7 +1434,7 @@
 </html></richcontent>
 <icon BUILTIN="full-1"/>
 </node>
-<node CREATED="1685797557140" ID="ID_442293502" MODIFIED="1685805086221" TEXT="delete article created by the user with the second button">
+<node CREATED="1685797557140" ID="ID_442293502" MODIFIED="1685986552353" TEXT="delete article created by the user with the second button">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -1491,6 +1490,7 @@
     </p>
   </body>
 </html></richcontent>
+<icon BUILTIN="full-1"/>
 </node>
 <node CREATED="1685804026210" ID="ID_418062498" MODIFIED="1685805141517" TEXT="delete an article without login">
 <richcontent TYPE="NOTE"><html>
