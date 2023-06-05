@@ -5,11 +5,8 @@ let password;
 
 test.beforeEach(async ({ page }) => {
   name = (Math.random() + 1).toString(36).substring(7);
-  //console.log("random", name);
   email = (Math.random() + 1).toString(36).substring(7);
-  //console.log("random", email);
   password = (Math.random() + 1).toString(36).substring(7);
-  //console.log("random", password);
 });
 
 test('new account creation', async ({ page }) => {

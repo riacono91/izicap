@@ -59,16 +59,41 @@ test('create a new article and publish', async ({ page }) => {
 
     await page.getByRole('button', { name: 'Publish Article' }).click();
 
-    const rex = new RegExp('https://angular.realworld.io/article/' + title + '-.*');
-    await page.waitForURL(rex);
+    // const rex = new RegExp('https://angular.realworld.io/article/' + title + '-*');
+    // console.log(rex)
+    // await page.waitForURL(rex);
+
+    await expect(page).toHaveURL(/article/);
+    // await page.waitForURL('**/article/**');
     
     // await expect(page).toHaveURL(new RegExp('https://angular.realworld.io/'+title+'.*'));
 
-    expect(page.getByRole('heading', { name: title })).toBeVisible;
-    expect(page.getByRole('link', { name: 'ritaqq' })).toBeVisible;
-    expect(page.getByRole('button', { name: ' Edit Article' }).first()).toBeVisible();
+    expect(page.getByRole('heading', { name: title })).toBeVisible();
+    // expect(page.getByText('article')).toHaveText('the article is writtent from here');
+    expect(page.getByText('the article is writtent from here')).toBeVisible();
+    expect(page.getByText('tag')).toHaveText('test_tag');
+
+    expect(page.getByRole('navigation').getByRole('link', { name: 'ritaqq' })).toBeVisible();
+    expect(page.getByRole('link', { name: 'ritaqq' }).nth(1)).toBeVisible();
+    expect(page.getByRole('link', { name: 'ritaqq' }).nth(2)).toBeVisible();
+
+    expect(page.getByText('June 5, 2023').first()).toBeVisible();
+
+    expect(page.getByRole('link', { name: ' Edit Article' }).first()).toBeVisible();
     expect(page.getByRole('button', { name: ' Delete Article' }).first()).toBeVisible();
-    expect(page.getByText('article')).toHaveText('the article is writtent from here')
+
+    expect(page.getByRole('link', { name: ' Edit Article' }).nth(1)).toBeVisible();
+    expect(page.getByRole('button', { name: ' Delete Article' }).nth(1)).toBeVisible();
+
+    await page.getByRole('link', { name: 'Home' }).click();
+    await page.waitForURL('https://angular.realworld.io');
+
+    await page.getByText('Global Feed').click();
+    await expect(page.getByText('ritaqq June 5, 2023 0 '+title+'Desription of the articleRead more... test_tag')).toBeVisible();
+    
+    await page.getByText('Your Feed').click();
+    await expect(page.getByText('ritaqq June 5, 2023 0 '+title+'Desription of the articleRead more... test_tag')).toBeVisible();
+    
 });
 
 test('create a new article without body', async ({ page }) => {
