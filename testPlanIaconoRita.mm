@@ -78,8 +78,7 @@
       check : user is redirect to the 'your feed' section
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <icon BUILTIN="full-1"/>
 </node>
 <node CREATED="1685532296848" ID="ID_1098645063" MODIFIED="1685870753097" TEXT="new user creation - need an account">
@@ -110,8 +109,7 @@
       check : user is redirect to the 'your feed' section
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <icon BUILTIN="full-1"/>
 </node>
 <node CREATED="1685532296848" ID="ID_158772373" MODIFIED="1685874113345" TEXT="new user creation - partial credential">
@@ -142,8 +140,7 @@
       check : 'sign up' button is not clickable
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <icon BUILTIN="full-1"/>
 </node>
 <node CREATED="1685532296848" ID="ID_1972035047" MODIFIED="1685884464393" TEXT="new user creation - only username">
@@ -174,8 +171,7 @@
       check : 'sign up' button is not clickable
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1685532669568" ID="ID_1447469189" MODIFIED="1685884478774" TEXT="new user - without email">
 <richcontent TYPE="NOTE"><html>
@@ -205,8 +201,7 @@
       check :&#160;&#160;'sign up' button is not clickable
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1685532296848" ID="ID_1458268738" MODIFIED="1685884537637" TEXT="new user creation - only email">
 <richcontent TYPE="NOTE"><html>
@@ -236,8 +231,7 @@
       check :&#160;&#160;'sign up' button is not clickable
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1685532649278" ID="ID_1481497941" MODIFIED="1685884546097" TEXT="new user - wrong email">
 <richcontent TYPE="NOTE"><html>
@@ -267,8 +261,7 @@
       check : user receives an error message
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1685533303498" ID="ID_1149528640" MODIFIED="1685884554096" TEXT="new user - username already exist">
 <richcontent TYPE="NOTE"><html>
@@ -298,8 +291,7 @@
       check : error message -&gt; username has already been taken
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <icon BUILTIN="full-1"/>
 </node>
 <node CREATED="1685533303498" ID="ID_108853013" MODIFIED="1685884572913" TEXT="new user - email already exist">
@@ -330,8 +322,7 @@
       check : error message -&gt;&#160;&#160;email has already been taken
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1685532669568" ID="ID_1600551609" MODIFIED="1685884590030" TEXT="new user - without username">
 <richcontent TYPE="NOTE"><html>
@@ -361,8 +352,7 @@
       check : error message -&gt;&#160;&#160;username can't be blank
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <icon BUILTIN="full-1"/>
 </node>
 <node CREATED="1685803511342" ID="ID_1011272522" MODIFIED="1685884636239" TEXT="creation new account with a very long username">
@@ -396,8 +386,7 @@
       expected result: the text is formatted following the page layout
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1685515276492" ID="ID_534959118" MODIFIED="1685785954960" POSITION="right" TEXT="login">
@@ -462,8 +451,7 @@
       check: the navigation bar with profile section that contain an avatar and the username
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <icon BUILTIN="full-1"/>
 </node>
 <node CREATED="1685779250494" ID="ID_1167959673" MODIFIED="1685889843622" TEXT="login correct and global feed">
@@ -497,8 +485,7 @@
       check: the view of the article list
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <icon BUILTIN="full-1"/>
 </node>
 <node CREATED="1685783671576" ID="ID_1687006799" MODIFIED="1685889863603" TEXT="sign in - logout - sign in">
@@ -553,8 +540,7 @@
       
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <icon BUILTIN="full-1"/>
 </node>
 <node CREATED="1685785425102" ID="ID_251262217" MODIFIED="1685889872812" TEXT="wrong login - email">
@@ -585,8 +571,7 @@
       check: message 'email or password is invalid'
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1685785425102" ID="ID_1298597329" MODIFIED="1685889877153" TEXT="wrong login - password">
 <richcontent TYPE="NOTE"><html>
@@ -616,8 +601,7 @@
       check: message 'email or password is invalid'
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1685786223498" ID="ID_973910078" MODIFIED="1685889910662" TEXT="login from home section / heart button">
 <richcontent TYPE="NOTE"><html>
@@ -656,8 +640,7 @@
       check: the navigation bar with profile section that contain an avatar and the username
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1685786223498" ID="ID_888658470" MODIFIED="1685889918657" TEXT="login from home section / article link">
 <richcontent TYPE="NOTE"><html>
@@ -702,8 +685,7 @@
       check: the navigation bar with profile section that contain an avatar and the username
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1685785425102" ID="ID_975502567" MODIFIED="1685889926662" TEXT="login with only password">
 <richcontent TYPE="NOTE"><html>
@@ -730,8 +712,7 @@
       check :&#160;&#160;'sign up' button is not clickable
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1685785425102" ID="ID_780476096" MODIFIED="1685889932235" TEXT="login with only email">
 <richcontent TYPE="NOTE"><html>
@@ -758,8 +739,7 @@
       check :&#160;&#160;'sign up' button is not clickable
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1685885837525" ID="ID_126699616" MODIFIED="1685885856077" TEXT="test if an user could be logged in more browser at the same time"/>
 </node>
@@ -1028,8 +1008,7 @@
       expected result: warning message: title must be unique
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1685515291158" HGAP="21" ID="ID_495357985" MODIFIED="1685801158692" POSITION="right" TEXT="Edit of an existing article" VSHIFT="26">
@@ -1058,14 +1037,14 @@
 </html></richcontent>
 <icon BUILTIN="full-1"/>
 </node>
-<node CREATED="1685797557140" ID="ID_1460770182" MODIFIED="1685805632753" TEXT="modify article created by the user with the first button ">
+<node CREATED="1685797557140" ID="ID_1460770182" MODIFIED="1685983479310" TEXT="modify article created by the user with the first button ">
 <richcontent TYPE="NOTE"><html>
   <head>
     
   </head>
   <body>
     <p>
-      the user is logged and click in Your feed
+      the user is logged and click in Global feed
     </p>
     <p>
       
@@ -1148,11 +1127,9 @@
     <p>
       
     </p>
-    <p>
-      
-    </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <icon BUILTIN="full-1"/>
 </node>
 <node CREATED="1685797557140" ID="ID_1643449901" MODIFIED="1685802538635" TEXT="modify article created by the user with the second button ">

@@ -3,39 +3,60 @@ import { test, expect } from '@playwright/test';
 let title;
 let title_mod;
 let article_url;
+let name;
+let email; 
+let password; 
 
 test.beforeEach(async ({ page }) => {
-  title = (Math.random() + 1).toString(36).substring(7);
   
-  title_mod = (Math.random() + 1).toString(36).substring(7);
-    await page.goto('https://angular.realworld.io/');
-    await page.getByRole('link', { name: 'Sign in' }).click();
-    await page.getByPlaceholder('Email').click();
-    await page.getByPlaceholder('Email').fill('ri@gmail.com');
-    await page.getByPlaceholder('Email').press('Tab');
-    await page.getByPlaceholder('Password').fill('ri');
-    await page.getByPlaceholder('Password').press('Enter');
-    await page.getByRole('link', { name: ' New Article' }).click();
-    await page.getByPlaceholder('Article Title').click();
-    await page.getByPlaceholder('Article Title').fill(title);
-    await page.getByPlaceholder('Article Title').press('Tab');
-    await page.getByPlaceholder('What\'s this article about?').fill('description');
-    await page.getByPlaceholder('What\'s this article about?').press('Tab');
-    await page.getByPlaceholder('Write your article (in markdown)').fill('nothing in particular');
-    await page.getByPlaceholder('Enter tags').fill('tag');
-    await page.getByPlaceholder('Enter tags').press('Enter');
-    await page.getByPlaceholder('Enter tags').press('Tab');
-    await page.getByRole('button', { name: 'Publish Article' }).click();
-
-    await expect(page).toHaveURL(/article/);
     // await page.waitForURL('**/article/**', {waitUntil: 'domcontentloaded'});
     // article_url = page.url();
     // console.log('url: ', article_url);
     // await expect(article_url).toContain('https://angular.realworld.io/article/' + title);
 });
 
+
+test('modify article created by others', async ({ page }) => {
+    /*the user is logged and click in Global feed
+    check the article list is present
+    click in one article previously created by other users 
+    check: the user is redirect to the page of the article
+    check: is not present the button 'Edit Article'
+    */
+    name = (Math.random() + 1).toString(36).substring(7);
+    email = (Math.random() + 1).toString(36).substring(7);
+    password = (Math.random() + 1).toString(36).substring(7);
+
+    await page.goto('https://angular.realworld.io/');
+
+    //the user click on Sign up
+    await page.getByRole('link', { name: 'Sign up' }).click();
+    await expect(page).toHaveURL('https://angular.realworld.io/register');
+    
+    await page.getByPlaceholder('Username').click();
+    await page.getByPlaceholder('Username').fill(name);
+    
+    await page.getByPlaceholder('Email').click();
+    await page.getByPlaceholder('Email').fill(email);
+
+    await page.getByPlaceholder('Password').click();
+    await page.getByPlaceholder('Password').fill(password);
+    //click in another field (like email) to allow the Sign up button not to be disabled
+    await page.getByPlaceholder('Email').click();
+
+    await page.getByRole('button', { name: 'Sign up' }).click();
+    await page.waitForURL('https://angular.realworld.io');
+       
+    await page.getByText('Global Feed').click();
+    
+    await page.getByRole('heading', { name: 'If we quantify the alarm, we can get to the FTP pixel through the online SSL interface!' }).click();
+    
+    expect(page.getByRole('link', { name: ' Edit Article' })).not.toBeVisible();
+
+    });
+
 test('modify article created by the user with the first button ', async ({ page }) => {
-    /*the user is logged and click in Your feed
+    /*the user is logged and click in Global feed
 
     check the article list is present
     click in one article previously created by the user
@@ -63,13 +84,35 @@ test('modify article created by the user with the first button ', async ({ page 
     check: under Your feed the new article is present and modified
     check: under Global feed the new article is present and modified
     */
+/**Set up: login  and creation article*/
+    title = (Math.random() + 1).toString(36).substring(7);
+  
+    title_mod = (Math.random() + 1).toString(36).substring(7);
+  
+      await page.goto('https://angular.realworld.io/');
+      await page.getByRole('link', { name: 'Sign in' }).click();
+      await page.getByPlaceholder('Email').click();
+      await page.getByPlaceholder('Email').fill('ri@gmail.com');
+      await page.getByPlaceholder('Email').press('Tab');
+      await page.getByPlaceholder('Password').fill('ri');
+      await page.getByPlaceholder('Password').press('Enter');
+      await page.getByRole('link', { name: ' New Article' }).click();
+      await page.getByPlaceholder('Article Title').click();
+      await page.getByPlaceholder('Article Title').fill(title);
+      await page.getByPlaceholder('Article Title').press('Tab');
+      await page.getByPlaceholder('What\'s this article about?').fill('description');
+      await page.getByPlaceholder('What\'s this article about?').press('Tab');
+      await page.getByPlaceholder('Write your article (in markdown)').fill('nothing in particular');
+      await page.getByPlaceholder('Enter tags').fill('tag');
+      await page.getByPlaceholder('Enter tags').press('Enter');
+      await page.getByPlaceholder('Enter tags').press('Tab');
+      await page.getByRole('button', { name: 'Publish Article' }).click();
+  
+      await expect(page).toHaveURL(/article/);
+        
+/**start the test */
     await page.goto('https://angular.realworld.io/');
-    await page.getByText('Your Feed').click();
-    expect(page.getByRole('heading', { name: title })).toBeVisible();
-    // expect(page.getByRole('link', { name: title + ' description Read more...' })).toBeVisible();
-
-    //I check in the Global feed considering that I check manually and there are no article in your feed, 
-    //I will work inthe test with Global feed
+    
     await page.getByText('Global Feed').click();
     await page.getByRole('link', { name: title + ' description Read more...' }).click();
     await page.getByRole('link', { name: ' Edit Article' }).first().click();
