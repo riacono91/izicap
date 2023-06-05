@@ -1225,7 +1225,7 @@
   </body>
 </html></richcontent>
 </node>
-<node CREATED="1685803627358" ID="ID_27139441" MODIFIED="1685803859383" TEXT="modify article with very long string in the textboxes">
+<node CREATED="1685803627358" ID="ID_27139441" MODIFIED="1685984034345" TEXT="modify article with very long string in the textboxes">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -1235,7 +1235,21 @@
       expected result: the text is formatted following the page layout
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
+</node>
+<node CREATED="1685984038722" ID="ID_371823174" MODIFIED="1685984102698" TEXT="edit an article as not registered user">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      expected result: not be possible to edit, not present the button to edit
+    </p>
+  </body>
+</html>
+</richcontent>
 </node>
 </node>
 <node CREATED="1685515302062" HGAP="16" ID="ID_130646792" MODIFIED="1685801163518" POSITION="right" TEXT="Adding comments to an existing article" VSHIFT="57">
@@ -1307,7 +1321,7 @@
   </body>
 </html></richcontent>
 </node>
-<node CREATED="1685804026210" ID="ID_1454111039" MODIFIED="1685805109777" TEXT="comment an article without login">
+<node CREATED="1685804026210" ID="ID_1454111039" MODIFIED="1685986076122" TEXT="comment an article without login">
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -1329,8 +1343,10 @@
       check: there is the link to the Sign in or Sign up
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 </node>
+<node CREATED="1685984117293" ID="ID_48172855" MODIFIED="1685984131968" TEXT="adding an article as not registered user"/>
 </node>
 <node CREATED="1685515315720" HGAP="2" ID="ID_1424695680" MODIFIED="1685805032318" POSITION="right" TEXT="Deletion of an existing article" VSHIFT="18">
 <node CREATED="1685797557140" ID="ID_1058511518" MODIFIED="1685805660556" TEXT="delete article created by others">
