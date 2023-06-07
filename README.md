@@ -48,10 +48,10 @@ Considering that I don't have detailed specifications I noticed ambiguities in t
 - it is failing the check where I expect to have the article published under 'Your Feed'
 - with Firefox is failing the check of the successful publication
 
-**create a new article without body** -> it is passing
+**create a new article without body** -> 100% is passing
 
 ## Edit Existing Article
-**modify article created by others** -> it is passing
+**modify article created by others** -> 100% is passing
 
 **modify article created by the user with the first button** 
 - it is failing the check where I expect that the article under 'Your Feed' is modified
@@ -63,7 +63,7 @@ Considering that I don't have detailed specifications I noticed ambiguities in t
 - with Firefox is failing the check of the comment because it is not publiched the comment
 
 **comment article created by the user**
-- with Chrome the test is passing
+- with Chrome 100% is passing
 - with Firefox is failing the check of the successful publication
 
 ## Deletion An Existing Article
