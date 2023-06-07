@@ -11,10 +11,19 @@ After It I installed playwright
 		- which installs npm: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 	- install playwright: https://playwright.dev/docs/intro#installing-playwright
 
+# How it is structured the folder
+
+Folder **E2E tests** that contain:
+- file .ts that are E2E tests **scripts** identified by the name of the flow (playwright files) 
+- folder for the **Reports** per each flow, where you can open and see the html file that contain the status of the tests. 
+
+The file **testPlanIaconoRita.html** for the Test plan
+
+
 # The Test plan
-The Test plan is created with FreeMind, for this you will find a file .mm (you can only open if you have FreeMind installed). But to be easier I exported as html file clickable, so you can open this file and you will see the mind map where you can click in each test case and see the description, or directly scroll down to see each test case with the specific desription.
+The Test plan is created with FreeMind, for this you will find a file .mm (you can only open if you have FreeMind installed). But to be easier I exported as html file clickable, so you can open this file and you will see the mind map, where you can click in each test case and see the description, or directly scroll down to see each test case with the specific desription.
 I created six sections for the E2E tests, one for each flow.
-I identified some test cases with priority 1, and these are the tests that I implemented for the automated scripts.
+I identified some test cases with **priority 1**, and these are the tests that I implemented for the automated scripts.
 
 For the cases I assume that:
 - There is no specific password format
