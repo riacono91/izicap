@@ -1128,8 +1128,7 @@
       
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <icon BUILTIN="full-1"/>
 </node>
 <node CREATED="1685797557140" ID="ID_1643449901" MODIFIED="1685802538635" TEXT="modify article created by the user with the second button ">
@@ -1235,8 +1234,7 @@
       expected result: the text is formatted following the page layout
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1685984038722" ID="ID_371823174" MODIFIED="1685984102698" TEXT="edit an article as not registered user">
 <richcontent TYPE="NOTE"><html>
@@ -1248,8 +1246,7 @@
       expected result: not be possible to edit, not present the button to edit
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1685515302062" HGAP="16" ID="ID_130646792" MODIFIED="1685801163518" POSITION="right" TEXT="Adding comments to an existing article" VSHIFT="57">
@@ -1281,20 +1278,17 @@
 </html></richcontent>
 <icon BUILTIN="full-1"/>
 </node>
-<node CREATED="1685797557140" ID="ID_1613559478" MODIFIED="1685805645363" TEXT="comment article created by the user">
+<node CREATED="1685797557140" ID="ID_1613559478" MODIFIED="1686121166495" TEXT="comment article created by the user">
 <richcontent TYPE="NOTE"><html>
   <head>
     
   </head>
   <body>
     <p>
-      the user is logged and click in Your feed
+      the user is logged
     </p>
     <p>
-      check the personal article list
-    </p>
-    <p>
-      click in one article
+      the user write a new article
     </p>
     <p>
       check: the user is redirect to the page of the article
@@ -1306,7 +1300,8 @@
       check: the comment is added under the article
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <icon BUILTIN="full-1"/>
 </node>
 <node CREATED="1685803894610" ID="ID_833032139" MODIFIED="1685803953058" TEXT="comment with a very long string">
@@ -1343,8 +1338,7 @@
       check: there is the link to the Sign in or Sign up
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node CREATED="1685984117293" ID="ID_48172855" MODIFIED="1685984131968" TEXT="adding an article as not registered user"/>
 </node>
