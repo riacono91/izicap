@@ -1,17 +1,17 @@
-#Intallation that I did
+# Installation that I did
 
 To use Playwright I need to istall Windows subsystem linux and node js.
 After It I installed playwright
-###documentation:
+## Documentation:
 	- https://playwright.dev/docs/intro
 
-###Installation steps:
+## Installation steps:
 	- install wsl: windows subsystem linux -> wsl --install
 	- install nvm (node js version manager): https://github.com/nvm-sh/nvm
 		- which installs npm: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 	- install playwright: https://playwright.dev/docs/intro#installing-playwright
 
-#The Test plan
+# The Test plan
 The Test plan is created with FreeMind, for this you will find a file .mm (you can only open if you have FreeMind installed). But to be easier I exported as html file clickable, so you can open this file and you will see the mind map where you can click in each test case and see the description, or directly scroll down to see each test case with the specific desription.
 I created six sections for the E2E tests, one for each flow.
 I identified some test cases with priority 1, and these are the tests that I implemented for the automated scripts.
@@ -26,16 +26,16 @@ Considering that I don't have detailed specifications I noticed ambiguities in t
 - Missing constrain for the email, for me should exist the check to register only email with the right format
 - In the test I don't specify the layout checks, but I think should exist specific tests to check the layout per each page
 
-#Analysis of the reports
+# Analysis of the reports
 
-##Creation New Account
+## Creation New Account
 
-##Login
+## Login
 
-##Creation New Article
+## Creation New Article
 
-##Edit Existing Article
+## Edit Existing Article
 
-##Adding Comment To An Existing Article
+## Adding Comment To An Existing Article
 
-##Deletion An Existing Article
+## Deletion An Existing Article
