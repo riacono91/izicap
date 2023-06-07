@@ -84,7 +84,7 @@ test('modify article created by the user with the first button ', async ({ page 
     check: under Your feed the new article is present and modified
     check: under Global feed the new article is present and modified
     */
-/**Set up: login  and creation article*/
+/*Set up: login  and creation article*/
     title = (Math.random() + 1).toString(36).substring(7);
   
     title_mod = (Math.random() + 1).toString(36).substring(7);
