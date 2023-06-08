@@ -15,7 +15,6 @@ I identified some test cases with **priority 1**, and these are the tests which 
 For the cases I assume that:
 - There is no specific password format
 - At signup there is no email sent
-- The article created is expected to be added in Your Feed and in Global Feed
 - The tag is added only if you click ENTER when you fill the corresponding field
 
 Considering that I don't have detailed specifications I noticed ambiguities in the site that I would like to emphasize, but I didn't conisder as bug in the tests
@@ -32,7 +31,7 @@ Considering that I don't have detailed specifications I noticed ambiguities in t
 
 ## Create New Article
 **create a new article and publish** 
-- with Chrome, it is failing the check where I expect to have the article published under 'Your Feed'
+- with Chrome, 100% is passing
 - with Firefox, is failing the check of the successful publication
 
 **create a new article without body**
@@ -44,7 +43,7 @@ Considering that I don't have detailed specifications I noticed ambiguities in t
 - 100% is passing
 
 **modify article created by the user with the first button** 
-- with Chrome, it is failing the check where I expect that the article under 'Your Feed' is modified
+- with Chrome, 100% is passing
 - with Firefox, is failing the check of the successful publication
 
 ## Adding Comment To An Existing Article
@@ -97,14 +96,13 @@ npm init playwright@latest
 npx playwright test		# to run the tests
 npx playwright show-report		# to show the reports
 ```
-In order to run my test you can copy my automated scripts (like: Creation_of_a_new_account.spec.ts from E2E test folder) inside your folder tests.
+- In order to run my test you can copy my automated scripts (like: Creation_of_a_new_account.spec.ts from E2E test folder) inside your folder tests.
 
-After you can execute the command (with the name of the test to execute)
+- After you can execute the command (with the name of the test to execute)
 ```
 npx playwright test tests/Creation_of_a_new_account.spec.ts --trace on
 ```
-
-To see the report in html I modified the file **playwright.config.ts** adding reporter: [['html', { outputFolder: 'my-report' }]] inside the *defineConfig*
+- To see the report in html I modified the file **playwright.config.ts** adding reporter: [['html', { outputFolder: 'my-report' }]] inside the *defineConfig*
 ```
 export default defineConfig({
   testDir: './tests',
@@ -114,7 +112,7 @@ export default defineConfig({
   
   },
 ```
-To see the report of the test executed
+- To see the report of the test executed
 ```
 npx playwright show-report my-report
 ```

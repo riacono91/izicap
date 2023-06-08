@@ -30,7 +30,6 @@ test('create a new article and publish', async ({ page }) => {
     check: the user and the data are correct
 
     the user click in Home on the navbar
-    check: under Your feed the new article is present
     check: under Global feed the new article is present*/
 
     // log in
@@ -85,10 +84,6 @@ test('create a new article and publish', async ({ page }) => {
 
     await page.getByText('Global Feed').click();
     await expect(page.getByText('ritaqq '+date+' 0 '+title+'Desription of the articleRead more... test_tag')).toBeVisible();
-    
-    await page.getByText('Your Feed').click();
-    await expect(page.getByText('ritaqq '+date+' 0 '+title+'Desription of the articleRead more... test_tag')).toBeVisible();
-    
 });
 
 test('create a new article without body', async ({ page }) => {

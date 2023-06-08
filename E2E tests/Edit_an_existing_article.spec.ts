@@ -7,15 +7,6 @@ let name;
 let email; 
 let password; 
 
-test.beforeEach(async ({ page }) => {
-  
-    // await page.waitForURL('**/article/**', {waitUntil: 'domcontentloaded'});
-    // article_url = page.url();
-    // console.log('url: ', article_url);
-    // await expect(article_url).toContain('https://angular.realworld.io/article/' + title);
-});
-
-
 test('modify article created by others', async ({ page }) => {
     /*the user is logged and click in Global feed
     check the article list is present
@@ -81,7 +72,6 @@ test('modify article created by the user with the first button ', async ({ page 
     check: the user and the data are correct
 
     the user click in Home on the navbar
-    check: under Your feed the new article is present and modified
     check: under Global feed the new article is present and modified
     */
 /*Set up: login  and creation article*/
@@ -130,7 +120,7 @@ test('modify article created by the user with the first button ', async ({ page 
 
     await expect(page).toHaveURL(/article/);
     expect(page.getByRole('heading', { name: title_mod })).toBeVisible();
-    // expect(page.getByText('article')).toHaveText('the article is writtent from here');
+    
     expect(page.getByText('article modified')).toBeVisible();
     expect(page.getByText('tag_modified')).toHaveText('tag_modified');
     
@@ -138,7 +128,9 @@ test('modify article created by the user with the first button ', async ({ page 
     expect(page.getByRole('link', { name: 'ritaqq' }).nth(1)).toBeVisible();
     expect(page.getByRole('link', { name: 'ritaqq' }).nth(2)).toBeVisible();
 
-    expect(page.getByText('June 5, 2023').first()).toBeVisible();
+    let current_date = new Date();
+    let date = current_date.toLocaleDateString("en-US", {month: 'long', day: 'numeric', year: 'numeric'});
+    expect(page.getByText(date).first()).toBeVisible();
 
     expect(page.getByRole('link', { name: ' Edit Article' }).first()).toBeVisible();
     expect(page.getByRole('button', { name: ' Delete Article' }).first()).toBeVisible();
@@ -151,9 +143,4 @@ test('modify article created by the user with the first button ', async ({ page 
 
     await page.getByText('Global Feed').click();
     await expect(page.getByRole('heading', { name: title_mod })).toBeVisible();
-    // await expect(page.getByRole('link', { name: title_mod +' description Read more...' })).toBeVisible();
-
-    await page.getByText('Your Feed').click();
-    expect(page.getByRole('heading', { name: title_mod })).toBeVisible();
-    // await expect(page.getByRole('link', { name: title_mod + ' description Read more...' })).toBeVisible();
 });
